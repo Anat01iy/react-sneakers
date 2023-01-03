@@ -20,10 +20,21 @@ function App() {
           </ul>
       </header>
       <div className="content p-40">
-        <h1 className="mb-40">Все кроссовки</h1>
+        <div className="d-flex align-center justify-between mb-40">
+          <h1>Все кроссовки</h1>
+          <div className="search-block d-flex">
+            <input placeholder="Поиск..." />
+          </div>
+        </div>
         
         <div className="d-flex flex-wrap justify-between">
           <div className="card">
+
+            <div className="favorite">
+              <img src="/img/heart-unliked.svg" alt="unliked" />
+            </div>
+
+
             <img width={133} height={112} src="/img/sneakers/s1.jpg" alt="Sneakers" />
             <h5>Кроссовки Puma X Aka Boku Future Rider</h5>
             <div className="d-flex justify-between align-center">
